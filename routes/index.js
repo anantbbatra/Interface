@@ -41,7 +41,7 @@ const rl = readline.createInterface({
 });
 
 app.get('/getStatus', function(req, res, next) {
-    rl.question('Is this bin available? (Enter Bin ID to confirm) ', (answer) => {
+    rl.question('\nIs this bin available? (Enter Bin ID to confirm) ', (answer) => {
         res.send(answer);
     })
 });
